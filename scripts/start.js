@@ -31,7 +31,7 @@ const config = {
         test: /\.css$/,
         loaders: [
           'style-loader',
-          'css-loader?importLoaders=1',
+          'css-loader?importLoaders=1&localIdentName=[name]-[hash:base64]',
           'postcss-loader'
         ]
       },
